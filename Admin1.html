@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="uk">
+<title>Адміністрація</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+ <link rel="icon" href="img/9.png">
+ <head>
+ 	<style type="text/css">
+ 	body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+  height: 100%;
+  color: #262626;
+  line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+ .bgimg-2 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+  background-image: url("img/12.jpg");
+  min-height: 400px;
+}
+
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
+
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a grey background color */
+.prev:hover, .next:hover {
+  background-color: #f1f1f1;
+  color: black;
+}
+.smoke {
+	background-image: url("img/3.jpg" "img/1.jpg" "img/13.jpg");
+  min-height: 100%;
+  position: absolute;
+  top: 60%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+}
+.smoke ul {
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+.smoke ul li {
+	list-style: none;
+	color: #ffffff;
+	font-size: 6em;
+	font-weight: bold;
+	letter-spacing: 10px;
+}
+.smoke ul:hover li {
+	animation: animate 2s linear forwards;
+}
+
+@keyframes animate {
+	0% {
+		transform: rotate(0deg) translateY(0px);
+		opacity 1;
+		filter: blur(1px);
+	}
+	100% {
+		transform: rotate(45deg) translateY(-200px);
+		opacity: 0;
+		filter: blur(20px);
+	}
+}
+
+.smoke ul li:nth-child(1) {
+	animation-delay: 0s;
+}
+.smoke ul li:nth-child(2) {
+	animation-delay: .4s;
+}
+.smoke ul li:nth-child(3) {
+	animation-delay: .8s;
+}
+.smoke ul li:nth-child(4) {
+	animation-delay: 1.2s;
+}
+.smoke ul li:nth-child(5) {
+	animation-delay: 1.6s;
+}
+.text{
+color: white;
+  text-shadow: 1px 1px 2px red, 0 0 25px green, 0 0 15px blue;
+   height: auto;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: linear-gradient(blue, yellow); /* Standard syntax (must be last) */
+  border-radius: 50px;
+}	
+ 	</style>
+ </head>
+ <body>
+ 	<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    <a href="Index.html" class="w3-bar-item w3-button"> Головна</a>
+    <a href="Index.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> Про училище</a>
+    <a href="Zvazok.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> Зв'язок</a>
+     <a href="Admin1.html" class="w3-bar-item w3-button"><i class="fa fa-male"></i> Адміністрація</a>
+     <a href="pedagog.html" class="w3-bar-item w3-button"><i class="fa fa-bars"></i> Сайти педагогів</a>
+	   <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="Адміністрація"><i class="fas fa-car"></i> Розваги <i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="Game.html" class="w3-bar-item w3-button"> <i class="fas fa-car"></i> Гра</a>
+         <a href="Game2.html" class="w3-bar-item w3-button"><i class="fa fa-plane"></i> Розвага</a>
+      </div>
+    </div>
+    </a>
+  </div>
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#home" class="w3-bar-item w3-button" onclick="toggleFunction()">Головна</a>
+    <a href="#info" class="w3-bar-item w3-button" onclick="toggleFunction()"><i class="fa fa-user"></i> Про училище</a>
+    <a href="Zvazok.html" class="w3-bar-item w3-button" onclick="toggleFunction()"><i class="fa fa-envelope"></i> Зв'язок</a>
+     <a href="Admin1.html" class="w3-bar-item w3-button"><i class="fa fa-male"></i> Адміністрація</a>
+     <a href="pedagog.html" class="w3-bar-item w3-button"><i class="fa fa-bars"></i> Сайти педагогів</a>
+    <a href="Game.html" class="w3-bar-item w3-button" onclick="toggleFunction()"><i class="fas fa-car"></i> Гра</a>
+    <a href="Game2.html" class="w3-bar-item w3-button"><i class="fa fa-plane"></i> Розвага</a>
+  </div>
+</div>
+
+<div class="smoke">
+			<ul class="text">
+				<li><em>Л</em></li>
+				<li><em>В</em></li>
+				<li><em>П</em></li>
+				<li><em>У</em></li>
+			</ul>
+		</div>
+<div class="slideshow-container" id="home">
+  <div class="mySlides1">
+    <img src="img/3.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides1">
+    <img src="img/1.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides1">
+    <img src="img/13.jpg" style="width:100%">
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+</div>
+<div class="w3-container w3-teal">
+<h1><center>Адміністрація</center></h1>
+</div><br>
+
+<div class="w3-content">
+
+<div class="w3-row w3-margin">
+
+<div class="w3-third">
+  <img src="img/Director.jpg" style="width:75%;min-height:150px">
+</div>
+<div class="w3-twothird w3-container">
+  <h2>Директор училища</h2>
+  <p><h5>
+<strong>Романюк Володимир Володимирович</strong><br>
+– (0332) <strong>26-06-29</strong>
+  </h5></p>
+</div>
+
+</div>
+<div class="w3-row w3-margin">
+
+<div class="w3-third">
+  <img src="img/НВЧ.jpg" style="width:75%;min-height:150px">
+</div>
+<div class="w3-twothird w3-container">
+  <h2>Заступник директора з НВЧ:</h2>
+  <p><h5>
+<strong>Тортина Алла Степанівна</strong><br>
+– (0332) <strong>26-19-40</strong>
+  </h5></p>
+</div>
+
+</div>
+<div class="w3-row w3-margin">
+
+<div class="w3-third">
+  <img src="img/НР.jpg" style="width:75%;min-height:150px">
+</div>
+<div class="w3-twothird w3-container">
+  <h2>Заступник директора з НР:</h2>
+  <p><h5><strong>
+ Василюк Наталія Миколаївна</strong>
+– (0332) <strong>26-08-91</strong>
+  </h5></p>
+</div>
+
+</div>
+<div class="w3-row w3-margin">
+
+<div class="w3-third">
+  <img src="img/ЗД.jpg" style="width:75%;min-height:150px">
+</div>
+<div class="w3-twothird w3-container">
+  <h2>Заступник директора з виховної роботи:</h2>
+  <p>
+  <strong>Свірська Ірина Святославівна</strong>
+  </p>
+</div>
+
+</div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>На верх</a>
+  <div class="w3-xlarge w3-section">
+    <a href=""><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+    <a href="https://www.instagram.com/__lvpu_9_/?hl=uk"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+    <a href=""><i class="fa fa-snapchat w3-hover-opacity"></i></a>
+    <a href=""><i class="fa fa-pinterest-p w3-hover-opacity"></i></a>
+    <a href=""><i class="fa fa-twitter w3-hover-opacity"></i></a>
+    <a href="http://lvpu.lutsk.ua/"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+  </div>
+</footer>
+
+
+ 	<script type="text/javascript">
+ 		var slideIndex = [1,1];
+var slideId = ["mySlides1", "mySlides2"]
+showSlides(1, 0);
+showSlides(1, 1);
+
+function plusSlides(n, no) {
+  showSlides(slideIndex[no] += n, no);
+}
+
+function showSlides(n, no) {
+  var i;
+  var x = document.getElementsByClassName(slideId[no]);
+  if (n > x.length) {slideIndex[no] = 1}    
+  if (n < 1) {slideIndex[no] = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex[no]-1].style.display = "block";  
+}
+ 	</script>
+ </body>

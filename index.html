@@ -1,0 +1,522 @@
+﻿<!DOCTYPE html>
+<html lang="uk">
+<title>ЛВПУ</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+ <link rel="icon" href="img/9.png">
+<head>
+<style type="text/css">
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+  height: 100%;
+  color: #262626;
+  line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+ .bgimg-2 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+  background-image: url("img/12.jpg");
+  min-height: 400px;
+}
+
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+.bgimg-2, {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
+
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a grey background color */
+.prev:hover, .next:hover {
+  background-color: #f1f1f1;
+  color: black;
+}
+
+.smoke {
+	background-image: url("img/3.jpg" "img/1.jpg" "img/13.jpg");
+  min-height: 100%;
+	position: absolute;
+	top: 60%;
+	left: 70%;
+	transform: translate(-50%, -50%);
+}
+.smoke ul {
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+.smoke ul li {
+	list-style: none;
+	color: #ffffff;
+	font-size: 6em;
+	font-weight: bold;
+	letter-spacing: 10px;
+}
+.smoke ul:hover li {
+	animation: animate 2s linear forwards;
+}
+
+@keyframes animate {
+	0% {
+		transform: rotate(0deg) translateY(0px);
+		opacity 1;
+		filter: blur(1px);
+	}
+	100% {
+		transform: rotate(45deg) translateY(-200px);
+		opacity: 0;
+		filter: blur(20px);
+	}
+}
+
+.smoke ul li:nth-child(1) {
+	animation-delay: 0s;
+}
+.smoke ul li:nth-child(2) {
+	animation-delay: .4s;
+}
+.smoke ul li:nth-child(3) {
+	animation-delay: .8s;
+}
+.smoke ul li:nth-child(4) {
+	animation-delay: 1.2s;
+}
+.smoke ul li:nth-child(5) {
+	animation-delay: 1.6s;
+}
+.text{
+color: white;
+  text-shadow: 1px 1px 2px red, 0 0 25px green, 0 0 15px blue;
+   height: auto;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: linear-gradient(blue, yellow); /* Standard syntax (must be last) */
+  border-radius: 50px;
+}
+#rcorners1 {
+  border-radius: 50px 15px;
+  padding: auto; 
+}
+#rcorners2 {
+  border-radius: 15px 50px 30px 5px;
+  padding: auto; 
+}
+#rcorners3 {
+  border-radius: 15px 50px 30px;
+  padding: auto; 
+}
+#img {
+  border-radius: 25%;
+}
+#rcorners4 {
+  border-radius: 70px;
+  padding: auto; 
+  *{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background: #a6fcff;
+}
+
+.wrapper{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.container{
+  width: 0px;
+  height: 50px;
+  background: #41484a;
+  text-align: center;
+  line-height: 45px;
+  padding-right: 50px;
+  transition: all 0.5s ease;
+  border-radius: 5px;
+  position: relative;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.input{
+  border: 0px;
+  border-bottom: 2px solid #fff;
+  background: transparent;
+  width: 0%;
+  padding: 5px 0;
+  outline: none;
+  color: #fff;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.container .fa{
+  color: #ffffff;
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.container.active{
+  width: 250px;
+  padding-left: 25px;
+  transition: all 0.5s ease;
+}
+
+.input.active{
+  width: 98%;
+  padding-left: 5px;
+  transition: all 0.5s 0.8s ease;
+}
+
+input::placeholder {
+  color: #fff;
+}
+
+
+
+
+
+
+
+/* youtube link */
+.youtube{
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  width: 160px;
+  text-align: center;
+  padding: 15px 10px;
+  background: #bb0000;
+  border-radius: 5px;
+}
+
+.youtube a{
+  text-decoration: none;
+  color: #fff;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="smoke">
+			<ul class="text">
+				<li><em>Л</em></li>
+				<li><em>В</em></li>
+				<li><em>П</em></li>
+				<li><em>У</em></li>
+			</ul>
+		</div>
+<div class="slideshow-container" id="home">
+  <div class="mySlides1">
+    <img src="img/3.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides1">
+    <img src="img/1.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides1">
+    <img src="img/13.jpg" style="width:100%">
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+</div><br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<div class="w3-row-padding w3-content" style="max-width:1899px" id="info">
+  <div class="w3-twothird">
+    <img src="img/Прапор.jpg" alt="Notebook" style="width:100%">
+    <h2><center>Історія училища</center></h2>
+    <div class="w3-justify">
+      <p><strong><em>«Луцьке вище професійне училище»</em></strong> – державний професійно-технічний навчальний заклад, заснований у 1966 році не базі Луцького машинобудівного заводу. 3 1983 року другим базовим підприємством став ДПЗ-28, за кошти якого і був збудований сучасний комплекс училища на 780 місць. Створені хороші умови для навчання та відпочинку учнів: навчальний корпус з просторими, світлими кабінетами, лабораторіями, майстернями, оснащеними новітнім обладнанням, актова і спортивна зали, їдальня, спортивний майданчик та дев’ятиповерховий гуртожиток.</p>
+      <p><strong><em>В 1984 році училище реорганізоване в середнє</em></strong> , що дало можли5вість разом з робітничою кваліфікацією отримувати середню освіту, а в 1993 році стало вищим професійним училищем і стало готувати (крім висококваліфікованих робітників) молодших спеціалістів.</p>
+      <p>
+      <strong><em>За 50 років в училищі підготовлено більше  20 тисяч кваліфікованих робітників та понад 1-ну тисячу молодших спеціалістів з 4-х спеціальностей.</em></strong> На сьогоднішній день вони наповнюють робітничі колективи АТ “СКФ Україна”, АТ АК “Богдан Моторс” ДП “Автоскладальний завод №1” та багатьох інших підприємств. Училище першим в області розпочало підготовку операторів комп’ютерного набору, і сьогодні тут є три комп’ютерні лабораторії та два кабінети з найсучаснішим обладнанням та доступом до мережі Internet</p>
+      <p><strong><em>Особлива увага звертається</em></strong> на матеріально-технічну базу та комплексно-методичне забезпечення майстерень та лабораторій, що є основою підготовки висококваліфікованих робітників.</p>
+      <p><strong><em>За роки існування в училищі сформувався висококваліфікований інженерно-педагогічний колектив.</em></strong> Фахову і загальноосвітню підготовку здійснюють 94 педагоги. Серед них 19 відмінників освіти, 21 викладач вищої категорії, 16 майстрів виробничого навчання мають робітничу кваліфікацію 5-го та 6-го розрядів, а 6 – робітничу кваліфікацію з двох і більше професій. 72 відсотки майстрів виробничого навчання мають вищу, а всі інші – середню спеціальну освіту.
+Сьогодні училище – це сучасний навчальний заклад, який має необхідну матеріальну базу, кваліфіковані педагогічні кадри, багатий досвід роботи з підготовки робітничих кадрів високої кваліфікації.</p>
+    </div>
+  </div>
+  <div class="w3-third">
+    <div class="w3-container w3-light-grey" id="rcorners1" >
+      <h3><center><strong>МОЛОДШИЙ СПЕЦІАЛІСТ</strong></center></h3>
+      <p class="w3-justify">
+<li> Галузеве машинобудування</li>
+<li> Електроенергетика, електротехніка та електромеханіка</li>
+    </div>
+    <br>
+    <div class="w3-container w3-light-grey w3-justify" id="rcorners2">
+      <h4><strong>Оголошує набів учнів на 2019-2020 навчальний рік</strong><br>
+      <center><strong>(9 класів):</strong></center></h4>
+      <p class="w3-justify">
+        <li> верстатник широкого профілю 2-4 розрядів;</li>
+        <li> бармен 4 розряду, офіціант 3-4 розрядів;</li>
+        <li> кухар, кондитер 3-4 розрядів;</li>
+        <li> електромонтер з ремонту та обслуговування електроустаткування;</li>
+        <li> слюсар з ремонту колісних транспортних засобів 2-4 розрядів;</li>
+        <li> оператор з обробки інформації та програмного забезпечення 2,1 категорій;</li>
+      </p>
+    </div>
+    <br>
+    <div class="w3-container w3-light-grey w3-justify" id="rcorners3">
+      <h4><strong>Оголошує набів учнів на 2019-2020 навчальний рік</strong><br>
+      <center><strong>(11 класів):</strong></center></h4>
+      <p class="w3-justify">
+       <li> кухар, кондитер 3 розряду</li>
+       <li> слюсар з ремонту колісних транспортних засобів (платна форма навчання)</li>
+       <li> електрозварювальник ручного зварювання 2, 3 розрядів</li>
+       <li> верстатник широкого профілю 2, 3 розрядів</li>
+       <li> слюсар з механоскладальних робіт, маляр 2, 3 розрядів</li>
+      </p>
+    </div><br>
+    <div class="w3-container w3-light-grey w3-justify" id="rcorners4">
+	<center><strong>Директор навчального закладу:</strong><br> Романюк Володимир Володимирович </center>
+	<center><img src="img/Director.jpg" width="125" height="140" id="img"></center><br>
+</div>
+  </div>
+</div>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="#home" class="w3-bar-item w3-button">Головна</a>
+    <a href="#info" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> Про училище</a>
+    <a href="Zvazok.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> Зв'язок</a>
+    <a href="Admin1.html" class="w3-bar-item w3-button"><i class="fa fa-male"></i> Адміністрація</a>
+    <a href="pedagog.html" class="w3-bar-item w3-button"><i class="fa fa-bars"></i> Сайти педагогів</a>
+	 <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="Адміністрація"><i class="fas fa-car"></i> Розваги <i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="Game.html" class="w3-bar-item w3-button"> <i class="fas fa-car"></i> Гра</a>
+        <a href="Game2.html" class="w3-bar-item w3-button"><i class="fa fa-plane"></i> Розвага</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#home" class="w3-bar-item w3-button" onclick="toggleFunction()">Головна</a>
+    <a href="#info" class="w3-bar-item w3-button" onclick="toggleFunction()"><i class="fa fa-user"></i> Про училище</a>
+    <a href="Zvazok.html" class="w3-bar-item w3-button" onclick="toggleFunction()"><i class="fa fa-envelope"></i> Зв'язок</a>
+    <a href="Admin1.html" class="w3-bar-item w3-button"><i class="fa fa-male"></i> Адміністрація</a>
+    <a href="pedagog.html" class="w3-bar-item w3-button"><i class="fa fa-bars"></i> Сайти педагогів</a>
+    <a href="Game.html" class="w3-bar-item w3-button" onclick="toggleFunction()"><i class="fas fa-car"></i> Гра</a>
+    <a href="Game2.html" class="w3-bar-item w3-button"><i class="fa fa-plane"></i> Розвага</a>
+  </div>
+</div>
+
+
+
+<!-- Second Parallax Image with Portfolio Text -->
+<div class="bgimg-2 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide">Фото</span>
+  </div>
+</div>
+
+<!-- Container (Portfolio Section) -->
+<div class="w3-content w3-container w3-padding-64">
+  <h3 class="w3-center">Фотографії</h3>
+  
+  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+  <div class="w3-row-padding w3-center">
+    <div class="w3-col m3">
+      <img src="img/5.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist over the mountains">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="img/6.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Coffee beans">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="img/7.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Bear closeup">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="img/8.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Quiet ocean">
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-center w3-section">
+    <div class="w3-col m3">
+      <img src="img/11.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="img/10.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="My beloved typewriter">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="img/9.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Empty ghost train">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="img/1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Sailing">
+    </div>
+  </div>
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+  </div>
+</div>
+
+
+
+
+
+
+
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img/1.jp").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+
+
+
+
+
+
+
+var slideIndex = [1,1];
+var slideId = ["mySlides1", "mySlides2"]
+showSlides(1, 0);
+showSlides(1, 1);
+
+function plusSlides(n, no) {
+  showSlides(slideIndex[no] += n, no);
+}
+
+function showSlides(n, no) {
+  var i;
+  var x = document.getElementsByClassName(slideId[no]);
+  if (n > x.length) {slideIndex[no] = 1}    
+  if (n < 1) {slideIndex[no] = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex[no]-1].style.display = "block";  
+}
+
+
+
+
+$(document).ready(function(){
+  
+  $(".fa-search").click(function(){
+    $(".container, .input").toggleClass("active");
+    $("input[type='text']").focus();
+  });
+  
+});
+
+/* Fell free to visit my youtube channel for more updates,
+https://www.youtube.com/channel/UCtVM2RthR4aC6o7dzySmExA
+*/
+
+
+</script>
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>На верх</a>
+  <div class="w3-xlarge w3-section">
+    <a href=""><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+    <a href="https://www.instagram.com/__lvpu_9_/?hl=uk"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+    <a href=""><i class="fa fa-snapchat w3-hover-opacity"></i></a>
+    <a href=""><i class="fa fa-pinterest-p w3-hover-opacity"></i></a>
+    <a href=""><i class="fa fa-twitter w3-hover-opacity"></i></a>
+    <a href="http://lvpu.lutsk.ua/"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+  </div>
+</footer>
+</body>
+</html>
